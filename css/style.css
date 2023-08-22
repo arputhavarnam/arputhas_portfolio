@@ -1,0 +1,220 @@
+body, h1, p {
+    font-family: "Times New Roman", Times, serif;
+    margin: 0%;
+    padding: 0%;
+    color: black;
+}
+
+header {
+    display: none !important;
+    background-color: lightgray;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.align_row {
+    margin-left: 0% !important;
+}
+
+.inner_content {
+    padding: 5% !important;
+}
+
+.content_split {
+    padding: 5%;
+}
+
+.content {
+    overflow: hidden;
+    border-radius: 5%;
+    padding: 2%;
+}
+
+.title {
+    font-size: 142%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.bio {
+    font-size: 100%;
+    text-align: left !important;
+}
+
+.box {
+    overflow: hidden;
+    padding: 2%;
+}
+
+.profile_image {
+    height: 100% !important;
+    width: 100% !important;
+    border-radius: 7% !important;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    box-shadow: 5px 5px 0px 2px lightgray;
+}
+
+.contact_content {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.content_end {
+    margin-top: 0% !important;
+}
+
+hr {
+    border-top: 1px solid lightgray;
+}
+
+.profile_bio {
+    margin-bottom: 0% !important;
+}
+
+.image_split {
+    padding: 5%;
+}
+
+.floating-list-buttons {
+    position: fixed;
+    top: 50%;
+    right: 1.2%;
+    transform: translateY(-50%);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 3%;
+}
+
+.floating-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white !important;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    text-decoration: none !important;
+    position: relative;
+}
+
+.floating-button:hover {
+    background-color: lightgray !important;
+    color: black !important;
+}
+
+.floating-button::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 0%;
+    z-index: 999;
+    transform: translateX(-50%);
+    padding: 5px;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    font-size: 60%;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.floating-button:hover::before {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px);
+}
+
+.remove_a_tag_highlight {
+    outline: none !important;
+    text-decoration: none !important;
+}
+
+.remove_a_tag_highlight:hover, .remove_a_tag_highlight:link {
+    outline: none !important;
+    text-decoration: none !important;
+    color: initial !important;
+}
+
+.contact_mid {
+    transform: translateY(15%);
+    width: 60%;
+}
+
+.textarea_resize_none {
+    resize: none !important;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-y: scroll;
+    }
+
+    header {
+        display: block !important;
+    }
+
+    .floating-list-buttons {
+        display: none !important;
+    }
+
+    .content_split {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .overall_bottom {
+        margin-bottom: 2%;
+    }
+}
+
+@media (max-height: 215px) {
+    body {
+        overflow-y: scroll;
+    }
+
+    header {
+        display: block !important;
+    }
+
+    .floating-list-buttons {
+        display: none !important;
+    }
+
+    .content_split {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .overall_bottom {
+        margin-bottom: 2%;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wonder Mine</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <script type="text/javascript" src="js/fontawesome.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="home.html" class="remove_a_tag_highlight"><i class="fas fa-user color_black"></i>&nbsp;&nbsp;&nbsp;About</a></li>
+                    <li><a href="contact.html" class="remove_a_tag_highlight"><i class="fas fa-envelope color_black"></i>&nbsp;&nbsp;&nbsp;Contact</a></li>
+                    <li><a href="#" class="remove_a_tag_highlight"><i class="fas fa-download color_black"></i>&nbsp;&nbsp;&nbsp;Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="floating-list-buttons">
+            <a href="home.html" class="floating-button" data-tooltip="About"><i class="fas fa-user"></i></a>
+            <a href="contact.html" class="floating-button" data-tooltip="Contact"><i class="fas fa-envelope"></i></a>
+            <a href="#" class="floating-button" data-tooltip="Download Resume"><i class="fas fa-download"></i></a>
+        </div>
+        <div class="container-fluid h-100">
+            <div class="row justify-content-center align-items-center h-100 inner_content">
+                <form class="contact-form contact_mid">
+                    <h2 class="text-center mb-4">Contact</h2>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone_number">Phone Number:</label>
+                        <input type="text" class="form-control" id="phone_number" name="phone_number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control textarea_resize_none" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>
